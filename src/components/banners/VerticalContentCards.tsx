@@ -34,8 +34,9 @@ const VerticalContentCards = ({
               alt={card.image.alt}
               style={{
                 maxWidth: "100%",
-                height: "auto"
-              }} />
+                height: "auto",
+              }}
+            />
           </div>
           <div className={styles.content}>
             <Title order={5} weight={600}>
