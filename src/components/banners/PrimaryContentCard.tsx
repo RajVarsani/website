@@ -1,4 +1,4 @@
-import Image, { StaticImageData } from "next/legacy/image";
+import Image, { StaticImageData } from "next/image";
 import { Text, Title } from "@mantine/core";
 
 import styles from "./PrimaryContentCard.module.css";
@@ -24,7 +24,14 @@ const PrimaryContentCard = ({
       className={styles.container + (isReversed ? " " + styles.reversed : "")}
     >
       <div className={styles.imageContainer}>
-        <Image src={image.src} alt={image.alt} layout="intrinsic" />
+        <Image
+          src={image.src}
+          alt={image.alt}
+          style={{
+            maxWidth: "100%",
+            height: "auto",
+          }}
+        />
       </div>
       <div className={styles.content}>
         <Title order={2}>{title}</Title>

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image, { StaticImageData } from "next/legacy/image";
+import Image, { StaticImageData } from "next/image";
 import { Title, Text } from "@mantine/core";
 
 import styles from "./VerticalContentCards.module.css";
@@ -32,8 +32,10 @@ const VerticalContentCards = ({
             <Image
               src={card.image.src}
               alt={card.image.alt}
-              layout="intrinsic"
-            />
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
           </div>
           <div className={styles.content}>
             <Title order={5} weight={600}>

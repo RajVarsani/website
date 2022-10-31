@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { Title, Text, Tooltip } from "@mantine/core";
 
 import styles from "./BitcoinApps.module.css";
@@ -27,7 +27,10 @@ const BitcoinApps = () => {
                 <Image
                   src={app.image.src}
                   alt={app.image.alt}
-                  layout="intrinsic"
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto",
+                  }}
                 />
               </Link>
             </Tooltip>

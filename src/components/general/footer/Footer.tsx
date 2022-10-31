@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { Divider, Text, Title, Button } from "@mantine/core";
 
 import useInstallExtension from "../../../hooks/useInstallExtension";
@@ -65,7 +65,10 @@ const Footer = () => {
             <Image
               src={COMPONENT_DATA.installContent.doItHint.src}
               alt={COMPONENT_DATA.installContent.doItHint.alt}
-              layout="intrinsic"
+              style={{
+                maxWidth: "100%",
+                height: "auto",
+              }}
             />
           </div>
         </div>
@@ -110,7 +113,14 @@ const Footer = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <Image src={social.icon.src} alt={social.icon.alt} />
+                    <Image
+                      src={social.icon.src}
+                      alt={social.icon.alt}
+                      style={{
+                        maxWidth: "100%",
+                        height: "auto",
+                      }}
+                    />
                   </Link>
                 )
               )}

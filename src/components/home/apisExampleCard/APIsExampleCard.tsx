@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { Text, Title, List, Button } from "@mantine/core";
 
 import styles from "./APIsExampleCard.module.css";
@@ -43,7 +43,10 @@ const APIsExampleCard = () => {
         <Image
           src={COMPONENT_DATA.coverImage.src}
           alt={COMPONENT_DATA.coverImage.alt}
-          layout="intrinsic"
+          style={{
+            maxWidth: "100%",
+            height: "auto",
+          }}
         />
       </div>
     </div>

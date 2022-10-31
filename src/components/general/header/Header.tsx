@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { Text, Burger, Button } from "@mantine/core";
 
 import styles from "./Header.module.css";
@@ -26,7 +26,10 @@ const HeaderAction = () => {
           <Image
             src={COMPONENT_DATA.logo.src}
             alt={COMPONENT_DATA.logo.alt}
-            layout="intrinsic"
+            style={{
+              maxWidth: "100%",
+              height: "auto",
+            }}
           />
         </div>
       </div>

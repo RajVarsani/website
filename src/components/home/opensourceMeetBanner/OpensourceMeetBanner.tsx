@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { Button, Title, Text } from "@mantine/core";
 
 import styles from "./OpensourceMeetBanner.module.css";
@@ -27,7 +27,10 @@ const OpensourceMeetBanner = () => {
         <Image
           src={COMPONENT_DATA.coverImage.src}
           alt={COMPONENT_DATA.coverImage.alt}
-          layout="intrinsic"
+          style={{
+            maxWidth: "100%",
+            height: "auto",
+          }}
         />
       </div>
     </div>

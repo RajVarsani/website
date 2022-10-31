@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 import styles from "./Background.module.css";
 
@@ -17,21 +17,24 @@ const Background = () => {
         <Image
           src={BACKGROUND_DATA.images.coinFLip.src}
           alt={BACKGROUND_DATA.images.coinFLip.alt}
-          layout="fill"
+          fill
+          sizes="100vw"
         />
       </div>
       <div className={styles.coinFlipV2}>
         <Image
           src={BACKGROUND_DATA.images.coinFLipV2.src}
           alt={BACKGROUND_DATA.images.coinFLipV2.alt}
-          layout="fill"
+          fill
+          sizes="100vw"
         />
       </div>
       <div className={styles.polygon}>
         <Image
           src={BACKGROUND_DATA.images.polygon.src}
           alt={BACKGROUND_DATA.images.polygon.alt}
-          layout="fill"
+          fill
+          sizes="100vw"
         />
       </div>
     </div>
