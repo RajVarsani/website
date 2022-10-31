@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Image, { StaticImageData } from "next/legacy/image";
-// import { NextLink } from "@mantine/next";
 import { Title, Text } from "@mantine/core";
 
 import styles from "./VerticalContentCards.module.css";

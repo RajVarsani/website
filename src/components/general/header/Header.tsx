@@ -1,7 +1,6 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/legacy/image";
-// import { NextLink } from "@mantine/next";
 import { Text, Burger, Button } from "@mantine/core";
 
 import styles from "./Header.module.css";

@@ -1,6 +1,5 @@
-import Link from 'next/link';
+import Link from "next/link";
 import Image from "next/legacy/image";
-// import { NextLink } from "@mantine/next";
 import { Divider, Text, Title, Button } from "@mantine/core";
 
 import useInstallExtension from "../../../hooks/useInstallExtension";

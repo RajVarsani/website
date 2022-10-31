@@ -1,6 +1,5 @@
-import Link from 'next/link';
+import Link from "next/link";
 import Image from "next/legacy/image";
-// import { NextLink } from "@mantine/next";
 import { Title, Text, Tooltip } from "@mantine/core";
 
 import styles from "./BitcoinApps.module.css";
@@ -24,11 +23,7 @@ const BitcoinApps = () => {
               openDelay={400}
               closeDelay={100}
             >
-              <Link
-                href={app.url}
-                className={styles.appImage}
-                target="_blank"
-              >
+              <Link href={app.url} className={styles.appImage} target="_blank">
                 <Image
                   src={app.image.src}
                   alt={app.image.alt}
