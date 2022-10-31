@@ -1,6 +1,7 @@
 import React from "react";
-import Image from "next/image";
-import { NextLink } from "@mantine/next";
+import Link from "next/link";
+import Image from "next/legacy/image";
+// import { NextLink } from "@mantine/next";
 import { Text, Burger, Button } from "@mantine/core";
 
 import styles from "./Header.module.css";
@@ -32,9 +33,9 @@ const HeaderAction = () => {
       </div>
       <div className={`${styles.links} ${opened && styles.visible}`}>
         {COMPONENT_DATA.links.map((link, index) => (
-          <NextLink href={link.href} key={index}>
+          <Link href={link.href} key={index}>
             <Text color="white">{link.text}</Text>
-          </NextLink>
+          </Link>
         ))}
       </div>
       <Button variant="outline" className={styles.button}>

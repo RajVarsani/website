@@ -1,4 +1,4 @@
-import Image, { StaticImageData } from "next/image";
+import Image, { StaticImageData } from "next/legacy/image";
 import { Text, Title } from "@mantine/core";
 
 import styles from "./PrimaryContentCard.module.css";

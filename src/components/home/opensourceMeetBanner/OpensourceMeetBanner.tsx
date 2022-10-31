@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { Button, Title, Text } from "@mantine/core";
 
 import styles from "./OpensourceMeetBanner.module.css";

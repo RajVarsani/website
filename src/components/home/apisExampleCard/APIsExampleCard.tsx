@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { Text, Title, List, Button } from "@mantine/core";
 
 import styles from "./APIsExampleCard.module.css";

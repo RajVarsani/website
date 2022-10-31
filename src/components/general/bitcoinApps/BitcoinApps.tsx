@@ -1,5 +1,6 @@
-import Image from "next/image";
-import { NextLink } from "@mantine/next";
+import Link from 'next/link';
+import Image from "next/legacy/image";
+// import { NextLink } from "@mantine/next";
 import { Title, Text, Tooltip } from "@mantine/core";
 
 import styles from "./BitcoinApps.module.css";
@@ -23,7 +24,7 @@ const BitcoinApps = () => {
               openDelay={400}
               closeDelay={100}
             >
-              <NextLink
+              <Link
                 href={app.url}
                 className={styles.appImage}
                 target="_blank"
@@ -33,16 +34,16 @@ const BitcoinApps = () => {
                   alt={app.image.alt}
                   layout="intrinsic"
                 />
-              </NextLink>
+              </Link>
             </Tooltip>
           ))}
         </div>
         <div>
-          <NextLink href={COMPONENT_DATA.moreApps.link}>
+          <Link href={COMPONENT_DATA.moreApps.link}>
             <Text transform="uppercase" weight={600}>
               {COMPONENT_DATA.moreApps.text}
             </Text>
-          </NextLink>
+          </Link>
         </div>
       </div>
     </div>
